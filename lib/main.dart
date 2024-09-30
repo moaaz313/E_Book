@@ -1,5 +1,6 @@
 import 'package:e_book/core/routing/app_router.dart';
 import 'package:e_book/core/routing/routes.dart';
+import 'package:e_book/core/theming/colors.dart';
 import 'package:e_book/featuers/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,6 +18,10 @@ class EBook extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          brightness: Brightness.dark,
+          scaffoldBackgroundColor: ColorsManager.primaryColor),
       home: const SplashScreen(),
       onGenerateRoute: appRouter.generateRoute,
       initialRoute: Routes.splashScreen,
