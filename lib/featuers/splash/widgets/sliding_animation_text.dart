@@ -7,7 +7,7 @@ class SlidingAnimationText extends StatelessWidget {
   });
 
   final Animation<Offset> slidingAnimation;
-
+ 
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(

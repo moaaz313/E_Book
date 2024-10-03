@@ -1,5 +1,6 @@
 // ignore_for_file: depend_on_referenced_packages
 
+import 'package:e_book/featuers/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../featuers/splash/splash_screen.dart';
@@ -11,6 +12,10 @@ class AppRouter {
       case Routes.splashScreen:
         return MaterialPageRoute(
           builder: (_) => const SplashScreen(),
+        );
+      case Routes.homeScreen:
+        return MaterialPageRoute(
+          builder: (_) => const HomeScreen(),
         );
       default:
         return MaterialPageRoute(
